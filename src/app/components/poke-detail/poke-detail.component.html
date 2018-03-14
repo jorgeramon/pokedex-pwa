@@ -1,25 +1,19 @@
 <main>
-	<div class="container">
-		<section>
-			<div class="row">
-				<div class="col-12">
-					<article>
-						<div class="card">
-							<div class="card-body">
-								<figure>
-									<img class="img-fluid" [src]="pokemon.picture"/>
-								</figure>
-								<h6>No: #{{ pokemon.pokedexNumber }}</h6>
-								<h3>Name: {{ pokemon.name }}</h3>
-								<h5><span class="badge badge-secondary mb-2">Type: {{ pokemon.type }}</span></h5>
-								<p>{{ pokemon.description }}</p>
-							</div>
-							<a [routerLink]="['/']"  class="btn btn-primary btn-cool"> Regresar</a>
-						</div>
-					</article>
+	<section>
+		<article>
+			<div class="card">
+				<div class="card-body">
+					<figure>
+						<img class="img-fluid" [src]="pokemon.picture"/>
+					</figure>
+					<h6>No: #{{ pokemon.pokedexNumber }}</h6>
+					<h3>Name: {{ pokemon.name }}</h3>
+					<h5><span class="badge badge-secondary mb-2">Type: {{ pokemon.type }}</span></h5>
+					<p>{{ pokemon.description }}</p>
 				</div>
+				<a [routerLink]="['/']"  class="btn btn-primary btn-cool"> Regresar</a>
 			</div>
-		</section>
-	</div>
+		</article>
+	</section>
 </main>
 
