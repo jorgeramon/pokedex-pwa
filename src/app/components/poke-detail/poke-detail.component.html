@@ -1,17 +1,26 @@
 <main>
-	<section>
+	<section class="animated fadeInDown">
 		<article>
-			<div class="card">
+			<div class="card">	
 				<div class="card-body">
-					<figure>
-						<img class="img-fluid" [src]="pokemon.picture"/>
-					</figure>
-					<h6>No: #{{ pokemon.pokedexNumber }}</h6>
-					<h3>Name: {{ pokemon.name }}</h3>
-					<h5><span class="badge badge-secondary mb-2">Type: {{ pokemon.type }}</span></h5>
-					<p>{{ pokemon.description }}</p>
+					<div class="row">
+						<div class="col-md-6 br-solid">
+							<figure>
+								<img class="img-fluid" [src]="pokemon.picture"/>
+							</figure>
+						</div>
+						<div class="col-md-6 col-flex">
+							<h6>No: #{{ pokemon.pokedexNumber }}</h6>
+							<h3>Name: {{ pokemon.name }}</h3>
+							<h5><span class="badge badge-secondary mb-2">Type: {{ pokemon.type }}</span></h5>
+							<p>{{ pokemon.description }}</p>
+						</div>
+					</div>
+					<div class="text-right">
+						<a [routerLink]="['/']"  class="btn btn-primary btn-cool"> Regresar</a>
+					</div>
+					
 				</div>
-				<a [routerLink]="['/']"  class="btn btn-primary btn-cool"> Regresar</a>
 			</div>
 		</article>
 	</section>

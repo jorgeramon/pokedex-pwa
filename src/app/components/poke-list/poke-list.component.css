@@ -1,11 +1,16 @@
 .card{
-	width:100%;
-	max-width: 350px;
-	margin:auto;
+    width: 100%;
+    min-width: 210px;
+    /* margin: auto; */
+    margin-bottom: 20px;
 }
 .card img{
 	width:100%;
-	max-width: 200px;
+	max-width: 150px;
 	margin: auto;
 }
-
+section{
+	flex-direction: row;
+	justify-content: space-between;
+	flex-flow: wrap;
+}

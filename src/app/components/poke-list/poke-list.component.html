@@ -1,16 +1,19 @@
 <main class="h-100">
-	<div class="d-flex flex-column">
-		<section *ngFor="let pokemon of pokedex">
-			<article>
-				<div class="card" >
-					<img class="card-img-top" [src]="pokemon.picture"/>
-					<div class="card-body">
-						<p class="card-subtitle">No. Pokédex : #{{ pokemon.pokedexNumber }}.</p>
-						<h3 class="card-title">{{ pokemon.name }}</h3>
-						<a class="btn btn-primary btn-block" [routerLink]="['/pokedex', pokemon._id]">Ver detalle</a>
+	<h1 class="text-center animated fadeIn">Pokédex PWA</h1>
+	<div class="card-content animated fadeIn">
+		<div class="d-flex flex-column">
+			<section>
+				<article  *ngFor="let pokemon of pokedex">
+					<div class="card" >
+						<img class="card-img-top" [src]="pokemon.picture"/>
+						<div class="card-body">
+							<small class="card-subtitle">No. Pokédex : #{{ pokemon.pokedexNumber }}.</small>
+							<h4 class="card-title">{{ pokemon.name }}</h4>
+							<a class="btn btn-primary btn-block" [routerLink]="['/pokedex', pokemon._id]">Ver detalle</a>
+						</div>
 					</div>
-				</div>
-			</article>
-		</section>
+				</article>
+			</section>
+		</div>
 	</div>
 </main>

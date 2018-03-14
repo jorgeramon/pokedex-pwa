@@ -4,8 +4,8 @@ body , html{
 	/*background: whitesmoke;*/
 }
 body{
-	background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
-    background-color: black !important;
+	background-image: url(assets/container_bg.png);
+	background-color: black !important;
 }
 main{
 	/*background: whitesmoke;*/
@@ -23,4 +23,23 @@ section{
 section:nth-child(odd){
 	/*background-color: #efefef !important;*/
 	
+}
+.card-content{
+	max-width: 970px;
+	width:100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.br-solid{
+	border-right: solid 1px #eee;
+}
+h1{
+	color:white !important;
+	font-weight: 100 !important;
+	letter-spacing: 2px !important;
+}
+.delay{
+	 animation-delay: .5s;
 }
