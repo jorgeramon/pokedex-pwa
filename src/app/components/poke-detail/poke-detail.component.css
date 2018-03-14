@@ -1,3 +1,9 @@
+@media(max-width:425px){
+	.card figure{
+		max-width: 200px !important;	
+	}
+}
+
 .card figure{
 margin: auto;
     max-width: 300px;

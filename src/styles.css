@@ -39,6 +39,7 @@ h1{
 	color:white !important;
 	font-weight: 100 !important;
 	letter-spacing: 2px !important;
+	padding-top:20px;
 }
 .delay{
 	 animation-delay: .5s;

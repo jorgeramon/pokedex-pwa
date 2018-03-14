@@ -1,8 +1,13 @@
 .card{
-    width: 100%;
-    min-width: 210px;
-    /* margin: auto; */
-    margin-bottom: 20px;
+	width: 100%;
+	min-width: 210px;
+	/* margin: auto; */
+	margin-bottom: 20px;
+}
+@media(max-width:425px){
+	.card{
+		min-width: 270px !important;
+	}
 }
 .card img{
 	width:100%;
@@ -13,4 +18,11 @@ section{
 	flex-direction: row;
 	justify-content: space-between;
 	flex-flow: wrap;
+}
+@media(max-width:425px){
+	article{
+		margin:auto;
+	}
+
+	
 }
