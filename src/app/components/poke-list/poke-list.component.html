@@ -1,7 +1,16 @@
-<div class="card col-sm-3" *ngFor="let pokemon of pokedex">
-  <img class="card-img-top" [src]="pokemon.picture"/>
-  <div class="card-body">
-    <h5 class="card-title">#{{ pokemon.pokedexNumber }}. {{ pokemon.name }}</h5>
-    <a class="btn btn-primary" [routerLink]="['/pokedex', pokemon._id]">Ver detalle</a>
-  </div>
-</div>
+<main class="h-100">
+	<div class="d-flex flex-column">
+		<section *ngFor="let pokemon of pokedex">
+			<article>
+				<div class="card" >
+					<img class="card-img-top" [src]="pokemon.picture"/>
+					<div class="card-body">
+						<p class="card-subtitle">No. Pokédex : #{{ pokemon.pokedexNumber }}.</p>
+						<h3 class="card-title">{{ pokemon.name }}</h3>
+						<a class="btn btn-primary btn-block" [routerLink]="['/pokedex', pokemon._id]">Ver detalle</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
+</main>
