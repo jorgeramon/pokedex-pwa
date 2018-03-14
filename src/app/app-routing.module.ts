@@ -5,7 +5,8 @@ import { PokeDetailComponent } from '@components/poke-detail/poke-detail.compone
 
 const routes: Routes = [
   { path: 'pokedex', component: PokeListComponent },
-  { path: 'pokedex/:id', component: PokeDetailComponent }
+  { path: 'pokedex/:id', component: PokeDetailComponent },
+  { path: '**', redirectTo: '/pokedex' }
 ];
 
 @NgModule({
